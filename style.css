@@ -1,0 +1,93 @@
+/* Estilos generales del cuerpo y fuente */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212; /* Un fondo oscuro para un look de discoteca */
+    color: #ffffff; /* Letras blancas para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título principal con efecto neón */
+.LRD {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+   color: #ffffff;; /* Color neón brillante */
+    text-shadow: 0 0 15px #00ff00;
+    
+    
+    
+}
+
+@keyframes neon-pulse {
+    from {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ff, 0 0 35px #ff00ff;
+    }
+}
+
+/* Contenedor de la imagen */
+.media-container {
+    width: 90%;
+    max-width: 900px;
+    height: 50vh; /* Usa viewport height para un tamaño relativo */
+    background-color: #000;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* La imagen dentro del contenedor */
+#media-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta la imagen sin distorsionar */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#media-image.hidden {
+    display: none;
+}
+
+/* Contenedor del botón */
+.Controls {
+    margin-top: 20px;
+}
+
+/* Botón con estilo "Discoteca" */
+.BotonRandom {
+    background-color: #000;
+    color: #00ff00; /* Color neón brillante */
+    padding: 25px 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #00ff00;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.BotonRandom:hover {
+    background-color: #00ff00;
+    color: #000;
+    transform: scale(1.05); /* Efecto de "crecimiento" */
+    box-shadow: 0 0 20px #00ff00;
+}
